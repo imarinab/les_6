@@ -12,7 +12,7 @@ from datetime import datetime
 name = input('Print your name:\n')
 
 def log_decorator(hello):
-    print("'Hello()' function is in progress whith args: {name} and without kwargs")
+    print(f"{func.__name__} function is in progress whith args: {name} and without kwargs")
     start = datetime.now()
     hello(name)
     print("Function 'Hello' completed")
